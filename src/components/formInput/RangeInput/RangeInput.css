@@ -1,0 +1,106 @@
+:root {
+  --blue: #254fc3;
+  --gray: #e0e0e2;
+}
+.RangeInput{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.rail-container {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.RangeInput__thumb{
+  position: absolute;
+  width: 100%;
+}
+
+.RangeInput__thumb-start {
+  z-index: 4;
+}
+.RangeInput__thumb-end {
+  z-index: 3;
+}
+.RangeInput__track, .RangeInput__range {
+  border-radius: 3px;
+  height: 5px;
+}
+
+.RangeInput__track {
+  border-radius: 3px;
+  height: 5px;
+  z-index: 1;
+  position: absolute;
+  background-color: var(--gray);
+  width: 100%;
+}
+
+
+.RangeInput__range {
+  
+  border-radius: 3px;
+  height: 5px;
+  z-index: 2;
+  position: absolute;
+  background-color: var(--blue);
+}
+
+.RangeInput__thumb {
+  pointer-events: none;
+  height: 0;
+  outline: none;
+  -webkit-appearance: none;
+ /* For Chrome browsers */
+ /* For Firefox browsers */
+ /* For IE */
+}
+.RangeInput__thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.RangeInput__thumb::-webkit-slider-thumb {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+.RangeInput__thumb::-moz-range-thumb {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+.RangeInput__thumb::-ms-thumb {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+.bottom-container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top:16px;
+}
